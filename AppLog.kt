@@ -10,6 +10,8 @@ import java.text.SimpleDateFormat
 
 object AppLog {
 
+    
+    //Provides date format for file name
     private val dateFormat: SimpleDateFormat = SimpleDateFormat("yyyy-MM-dd kk:mm:ss")
 
     fun i(tag: String, msg: String) {
@@ -42,6 +44,8 @@ object AppLog {
             logDirectory.mkdir()
         }
 
+        
+        //Creates file using date above. Automatically creates new file for each day.
         val logFile =
             File("${Environment.getExternalStorageDirectory()}/Logs/logcat_${appendDateFormat.format(System.currentTimeMillis())}.txt")
 
