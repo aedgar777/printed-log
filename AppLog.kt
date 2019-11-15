@@ -1,4 +1,4 @@
-package io.andrewedgar
+package io.andrewedgar.printedlog
 
 import android.os.Environment
 import android.util.Log
